@@ -24,3 +24,48 @@
   color: var(--accent);
   background-color: var(--bg-cart);
 }
+
+/* кнопка наверх */
+.to-top {
+  position: absolute;
+  right: 20px;
+  bottom: 170px;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  opacity: 0;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: var(--accent);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s;
+  transform: translateY(20px);
+}
+
+.to-top--visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.to-top:hover {
+  background-color: var(--accent-press);
+}
+
+@media (max-width: 1024px) {
+  .to-top {
+    bottom: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .to-top {
+    bottom: 260px;
+  }
+}

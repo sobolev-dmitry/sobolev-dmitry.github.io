@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
   font-family: var(--font-family);
   color: var(--text-primary);
-  background-color: var(--bg-page);
+  background-color: var(--code-bg);
 }
 
 h1,
