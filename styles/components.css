@@ -55,7 +55,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  opacity: 0;
+  opacity: 0.6;
   color: #ffffff;
   text-decoration: none;
   background-color: var(--accent);
@@ -68,23 +68,22 @@
 
 .to-top--visible {
   visibility: visible;
-  opacity: 1;
   transform: translateY(0);
 }
 
 .to-top:hover {
   background-color: var(--accent-press);
-  opacity: 1;
+  opacity: 0.6;
 }
 
 @media (max-width: 1024px) {
   .to-top {
-    bottom: 140px;
+    bottom: 155px;
   }
 }
 
 @media (max-width: 767px) {
   .to-top {
-    bottom: 260px;
+    bottom: 200px;
   }
 }
