@@ -241,8 +241,8 @@
 }
 
 .footer__inner {
-  display: flex;
   position: relative;
+  display: flex;
   flex-direction: column;
   gap: 32px;
   max-width: 1440px;
@@ -328,6 +328,119 @@
   text-align: right;
 }
 
+.contact {
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.contact__header {
+  padding: 16px 0;
+  text-align: center;
+  background-color: var(--bg-page);
+}
+
+.contact__title {
+  color: var(--text-primary);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: var(--fs-title-2);
+}
+
+.contact__title .accent {
+  color: var(--accent);
+}
+
+.contact__body {
+  padding: 32px 0 97px;
+  background-image: url("../svg/background_patern.svg");
+  background-size: cover;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: clamp(343px, 100%, 460px);
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 48px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.contact__submit {
+  margin-top: 43px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-field__label {
+  color: var(--text-primary);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--fs-text-body);
+}
+
+.form-field__input {
+  border: 1px solid var(--accent);
+  border-radius: 16px;
+  padding: 16px 20px;
+  outline: none;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: var(--fs-text-body);
+  background-color: transparent;
+}
+
+.form-field__input::placeholder {
+  color: var(--text-secondary);
+}
+
+.form-field__input--textarea {
+  height: 110px;
+  resize: none;
+}
+
+.form-field__error {
+  display: none;
+  color: var(--error);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: var(--fs-text-helper);
+}
+
+.form-field.is-invalid .form-field__error {
+  display: block;
+}
+
+.form-field.is-invalid .form-field__input {
+  border-color: var(--error);
+}
+
+.contact__success {
+  color: var(--text-message);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: var(--fs-text-body);
+  text-align: center;
+}
+
+.contact__error {
+  color: var(--error);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: var(--fs-text-body);
+  text-align: center;
+}
+
+
+@media (max-width: 767px) {
+}
+
 /* МОБИЛЬНАЯ ВЕРСИЯ */
 
 @media (max-width: 1024px) {
@@ -352,6 +465,10 @@
   }
 
   .stack {
+    margin-top: 40px;
+  }
+
+  .contact {
     margin-top: 40px;
   }
 
@@ -437,6 +554,23 @@
   .stack__list {
     grid-template-columns: repeat(2, auto);
     gap: 40px;
+  }
+
+  /* форма */
+  .contact {
+    padding: 0 16px;
+  }
+
+  .contact__header {
+    margin: 0 -16px;
+  }
+
+  .contact__body {
+    padding-bottom: 32px;
+  }
+
+  .contact__form {
+    padding: 20px;
   }
 
   /* футер */
