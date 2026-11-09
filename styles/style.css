@@ -20,6 +20,13 @@
   text-decoration: none;
 }
 
+.logo:hover,
+.logo:focus-visible {
+  outline: none;
+  opacity: 1;
+  text-decoration: none;
+}
+
 .logo__accent {
   color: var(--accent);
 }
@@ -39,7 +46,18 @@
 }
 
 .nav__link:hover {
+  opacity: 1;
   color: var(--accent);
+}
+
+.nav__link:active {
+  color: var(--accent-press);
+}
+
+.nav__link:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .burger {
@@ -153,7 +171,6 @@
   gap: 24px;
 }
 
-/* ===== Карточка ===== */
 .card {
   display: flex;
   flex-direction: column;
@@ -396,6 +413,15 @@
   background-color: transparent;
 }
 
+.form-field__input:hover {
+  background-color: var(--accent-bg);
+}
+
+.form-field__input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .form-field__input::placeholder {
   color: var(--text-secondary);
 }
@@ -435,10 +461,6 @@
   font-weight: 400;
   font-size: var(--fs-text-body);
   text-align: center;
-}
-
-
-@media (max-width: 767px) {
 }
 
 /* МОБИЛЬНАЯ ВЕРСИЯ */

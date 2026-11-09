@@ -25,6 +25,24 @@
   background-color: var(--bg-cart);
 }
 
+.button__secondary:hover {
+  color: var(--bg-cart);
+}
+
+.button:hover {
+  opacity: 1;
+  background-color: var(--accent-hover);
+}
+
+.button:active {
+  background-color: var(--accent-press);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 /* кнопка наверх */
 .to-top {
   position: absolute;
@@ -56,6 +74,7 @@
 
 .to-top:hover {
   background-color: var(--accent-press);
+  opacity: 1;
 }
 
 @media (max-width: 1024px) {

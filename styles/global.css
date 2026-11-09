@@ -6,8 +6,8 @@
 
 body {
   margin: 0 auto;
-  font-family: var(--font-family);
   color: var(--text-primary);
+  font-family: var(--font-family);
   background-color: var(--code-bg);
 }
 
@@ -27,6 +27,19 @@ li {
 
 a {
   color: inherit;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+:where(a) {
+  border-radius: 4px;
+}
+
+:where(a:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 button,
@@ -54,14 +67,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f3f4f6;
   border-radius: 6px;
+  background: #f3f4f6;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 6px;
   border: 2px solid transparent;
+  border-radius: 6px;
+  background: var(--accent);
 }
 
 ::-webkit-scrollbar-thumb:hover {
