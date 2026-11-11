@@ -235,6 +235,36 @@
   height: 64px;
 }
 
+.about__tags-wrapper {
+  margin-top: 24px;
+  overflow: hidden;
+  background-color: var(--bg-page);
+}
+
+.about__tags-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.about__tags-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about__tag {
+  flex-shrink: 0;
+  border-radius: 32px;
+  padding: 8px 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: var(--fs-text-body);
+  background-color: var(--disabled);
+  white-space: nowrap;
+}
+
 .principles {
   margin-top: 75px;
   background-color: var(--bg-page);
@@ -677,6 +707,10 @@
   .about__deco {
     bottom: 16px;
     left: 16px;
+  }
+
+  .principles__card {
+    min-height: 252px;
   }
 
   /* проекты */
