@@ -8,6 +8,15 @@ burger.addEventListener('click', () => {
   burger.setAttribute('aria-expanded', isOpen);
 });
 
+document.addEventListener('click', (event) => {
+  // если клик не по бургеру — просто закрываем меню
+  if (!burger.contains(event.target)) {
+    nav.classList.remove('is-open');
+    burger.classList.remove('is-open');
+    burger.setAttribute('aria-expanded', 'false');
+  }
+});
+
 // Валидация формы
 const form = document.getElementById('contact-form');
 const submitBtn = form.querySelector('.contact__submit');

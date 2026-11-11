@@ -29,7 +29,7 @@
           <ul class="nav__list">
             <li><a href="#about" class="nav__link">Обо мне</a></li>
             <li><a href="#projects" class="nav__link">Проекты</a></li>
-            <li><a href="#contacts" class="nav__link">Контакты</a></li>
+            <li><a href="#contact" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
 
@@ -91,39 +91,55 @@
           </div>
         </div>
       </section>
-      <section class="projects">
-        <div class="projects__inner">
-          <h2 class="projects__title">Мои <span class="projects__title-accent">проекты</span></h2>
-          <div class="projects__list">
-            <article class="card">
-              <img
-                class="card__cover"
-                src="./images/cover_topskoup.jpg"
-                alt="Лендинг коворкинга Топ Скоуп"
-              />
-              <h4 class="card__title">Лендинг коворкинга Топ Скоуп</h4>
-              <a href="#" class="button">Подробнее</a>
-            </article>
-            <article class="card">
-              <img
-                class="card__cover"
-                src="./images/cover_topskoup.jpg"
-                alt="Лендинг коворкинга Топ Скоуп"
-              />
-              <h4 class="card__title">Лендинг коворкинга Топ Скоуп</h4>
-              <a href="#" class="button">Подробнее</a>
-            </article>
-            <article class="card">
-              <img
-                class="card__cover"
-                src="./images/cover_topskoup.jpg"
-                alt="Лендинг коворкинга Топ Скоуп"
-              />
-              <h4 class="card__title">Лендинг коворкинга Топ Скоуп</h4>
-              <a href="#" class="button">Подробнее</a>
-            </article>
-          </div>
-          <a href="#" class="button button__secondary">Смотреть больше</a>
+      <section class="principles" id="principles">
+        <div class="principles__inner">
+          <h2 class="principles__title">
+            Принципы моей <span class="principles__title-accent">работы</span>
+          </h2>
+          <ul class="principles__list">
+            <li class="principles__card">
+              <div class="principles__content">
+                <h3 class="principles__card-title">Сначала семантика и доступность</h3>
+                <p class="principles__card-text">
+                  Делаю не просто «чтобы выглядело», а чтобы было понятно скринридерам и
+                  поисковикам: правильные теги, ARIA-атрибуты, логичная структура. База, которую
+                  закладываю с первого экрана.
+                </p>
+              </div>
+              <span class="principles__number" aria-hidden="true">01</span>
+            </li>
+            <li class="principles__card principles__card--right">
+              <div class="principles__content">
+                <h3 class="principles__card-title">Чистый код и предсказуемость</h3>
+                <p class="principles__card-text">
+                  BEM для именования, CSS‑переменные для тем и состояний, модульность, чтобы коллега
+                  (или будущий ты) мог спокойно подхватить проект.
+                </p>
+              </div>
+              <span class="principles__number" aria-hidden="true">02</span>
+            </li>
+            <li class="principles__card">
+              <div class="principles__content">
+                <h3 class="principles__card-title">Адаптив «от мобильного»</h3>
+                <p class="principles__card-text">
+                  Проверяю поведение на узких экранах, избегаю жёстких ширин, использую
+                  относительные единицы и медиа-запросы осознанно. Делаю так, чтобы макет из Figma
+                  не терял смысла на телефоне.
+                </p>
+              </div>
+              <span class="principles__number" aria-hidden="true">03</span>
+            </li>
+            <li class="principles__card principles__card--right">
+              <div class="principles__content">
+                <h3 class="principles__card-title">Контроль версий и прозрачность</h3>
+                <p class="principles__card-text">
+                  Git с понятными коммитами, PR с описанием изменений и чеклистом проверок, чтобы
+                  работа была воспроизводимой и удобной для ревью.
+                </p>
+              </div>
+              <span class="principles__number" aria-hidden="true">04</span>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="stack">
@@ -167,6 +183,41 @@
               <h4 class="stack__name">Figma</h4>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="projects__inner">
+          <h2 class="projects__title">Мои <span class="projects__title-accent">проекты</span></h2>
+          <div class="projects__list">
+            <article class="card">
+              <img
+                class="card__cover"
+                src="./images/cover_topskoup.jpg"
+                alt="Лендинг коворкинга Топ Скоуп"
+              />
+              <h4 class="card__title">Лендинг коворкинга Топ Скоуп</h4>
+              <a href="#" class="button">Подробнее</a>
+            </article>
+            <article class="card">
+              <img
+                class="card__cover"
+                src="./images/cover_topskoup.jpg"
+                alt="Лендинг коворкинга Топ Скоуп"
+              />
+              <h4 class="card__title">Лендинг коворкинга Топ Скоуп</h4>
+              <a href="#" class="button">Подробнее</a>
+            </article>
+            <article class="card">
+              <img
+                class="card__cover"
+                src="./images/cover_topskoup.jpg"
+                alt="Лендинг коворкинга Топ Скоуп"
+              />
+              <h4 class="card__title">Лендинг коворкинга Топ Скоуп</h4>
+              <a href="#" class="button">Подробнее</a>
+            </article>
+          </div>
+          <a href="#" class="button button__secondary">Смотреть больше</a>
         </div>
       </section>
       <section class="contact" id="contact">
