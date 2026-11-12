@@ -20,10 +20,12 @@
   align-self: center;
   width: auto;
   max-width: 100%;
-  border: 1px solid var(--accent);
+  /* border: 1px solid var(--accent); */
   color: var(--accent);
   background-color: var(--bg-cart);
 }
+
+
 
 .button__secondary:hover {
   color: var(--bg-cart);
@@ -43,47 +45,21 @@
   outline-offset: 2px;
 }
 
-/* кнопка наверх */
-.to-top {
-  position: absolute;
-  right: 20px;
-  bottom: 170px;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  opacity: 0.6;
-  color: #ffffff;
-  text-decoration: none;
-  background-color: var(--accent);
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease,
-    visibility 0.3s;
-  transform: translateY(20px);
+.button__card {
+  background-color: var(--bg-cart);
+  color: var(--accent);
 }
 
-.to-top--visible {
-  visibility: visible;
-  transform: translateY(0);
+.button__card:hover {
+  background-color: var(--bg-cart);
+  color: var(--accent-hover);
 }
 
-.to-top:hover {
-  background-color: var(--accent-press);
-  opacity: 0.6;
+.button__card:active {
+  color: var(--accent-press);
 }
 
-@media (max-width: 1024px) {
-  .to-top {
-    bottom: 155px;
-  }
-}
-
-@media (max-width: 767px) {
-  .to-top {
-    bottom: 200px;
-  }
+.projects__inner .button__secondary {
+  align-self: center;
+  border: 1px solid var(--accent);
 }
