@@ -405,7 +405,12 @@
   margin-bottom: 16px;
   border-radius: 4px;
   object-fit: cover;
+  transition: opacity 0.3s ease;
   aspect-ratio: 16 / 9;
+}
+
+.card:hover .card__cover {
+  opacity: 0.85;
 }
 
 .card__title {
