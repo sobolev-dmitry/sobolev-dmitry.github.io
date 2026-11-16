@@ -403,8 +403,15 @@
 .card__title {
   margin-bottom: 20px;
   color: var(--code-bg);
-  font-weight: 400;
+  font-weight: 500;
   font-size: var(--fs-text-menu);
+  text-align: center;
+}
+
+.card__stack {
+  color: var(--text-secondary);
+  font-size: var(--fs-text-body);
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -835,6 +842,10 @@
   }
   .projects__list {
     grid-template-columns: 1fr;
+  }
+
+  .projects__list .card:nth-child(n + 4) {
+    display: none;
   }
 
   .stack__inner {

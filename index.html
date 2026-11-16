@@ -3,7 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dmitry Sobolev — Frontend Developer Portfolio</title>
+    <title>Дмитрий Соболев | Frontend Developer | Портфолио</title>
+    <meta
+      name="description"
+      content="Портфолио фронтенд-разработчика Дмитрия Соболева. Адаптивная вёрстка, React, TypeScript, БЭМ. Проекты: лендинги, интернет-магазины. Свяжитесь для сотрудничества."
+    />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sobolev-dmitry.github.io/" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="Дмитрий Соболев — Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Портфолио разработчика: адаптивные сайты, React, TypeScript. Готовые проекты и контакты."
+    />
+    <meta property="og:image" content="https://sobolev-dmitry.github.io/images/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Портфолио фронтенд-разработчика Дмитрия Соболева" />
+    <meta property="og:site_name" content="Портфолио Дмитрия Соболева" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Дмитрий Соболев — Frontend Developer" />
+    <meta name="twitter:description" content="Портфолио: вёрстка, React, TypeScript" />
+    <meta name="twitter:image" content="https://sobolev-dmitry.github.io/images/og-cover.jpg" />
+    <link rel="canonical" href="https://sobolev-dmitry.github.io/" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-32.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/icon-apple-touch.png" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
@@ -44,21 +78,6 @@
           alt=""
         /></div
     ></noscript>
-    <meta
-      name="description"
-      content="Превращаю макеты в удобные интерфейсы — с вниманием к структуре, компонентам и состояниям."
-    />
-    <meta property="og:title" content="Dmitry Sobolev — Frontend Developer" />
-    <meta property="og:description" content="Портфолио фронтенд разработчика Дмитрия Соболева" />
-    <meta property="og:type" content="website" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/icon-16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-32.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="./images/icon-apple-touch.png" />
-    <link rel="stylesheet" href="./styles/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/components.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="header">
@@ -253,9 +272,8 @@
                 src="./images/cover_topskoup.jpg"
                 alt="Лендинг коворкинга Топ Скоуп"
               />
-              <h4 class="card__title">
-                Топ Скоуп — лендинг коворкинга. Разработка с нуля: идея, макет, вёрстка
-              </h4>
+              <h4 class="card__title">Топ Скоуп — лендинг коворкинга</h4>
+              <p class="card__stack">HTML, CSS, JavaScript, Figma</p>
               <a
                 href="https://sobolev-dmitry.github.io/top-scope-landing/"
                 class="button button__card"
@@ -272,6 +290,7 @@
               <h4 class="card__title">
                 Tuningstore96 — интернет‑магазин. Поддержка и доработка функционала
               </h4>
+              <p class="card__stack">WordPress, JavaScript, HTML, CSS, адаптивная вёрстка</p>
               <a href="https://tuningstore96.ru/" class="button button__card" target="_blank"
                 >Смотреть</a
               >
@@ -282,11 +301,59 @@
                 src="./images/mystellarburger.jpg"
                 alt="Лендинг коворкинга Топ Скоуп"
               />
-              <h4 class="card__title">
-                Stellar Burgers: конструктор бургера, авторизация, лента заказов
-              </h4>
+              <h4 class="card__title">Stellar Burgers — космофастфуд с конструктором бургера</h4>
+              <p class="card__stack">React, Redux, TypeScript, CSS Modules</p>
               <a
-                href="https://github.com/sobolev-dmitry/stellar-burgers"
+                href="https://sobolev-dmitry.github.io/stellar-burgers/#/feed"
+                class="button button__card"
+                target="_blank"
+                >Смотреть</a
+              >
+            </article>
+            <article class="card">
+              <img
+                class="card__cover"
+                src="./images/weblarek.jpg"
+                alt="weblarek интернет-магазин для разработчиков"
+              />
+              <h4 class="card__title">WebLarek — магазин цифровых навыков</h4>
+              <p class="card__stack">Vite, TypeScript, CSS, REST API</p>
+              <a
+                href="https://sobolev-dmitry.github.io/weblarek/"
+                class="button button__card"
+                target="_blank"
+                >Смотреть</a
+              >
+            </article>
+            <article class="card">
+              <img
+                class="card__cover"
+                src="./images/no_focus.jpg"
+                alt="лендинг «Сложно сосредоточиться» с адаптивной темой"
+              />
+              <h4 class="card__title">
+                «Сложно сосредоточиться» — адаптивный лендинг с тёмной темой
+              </h4>
+              <p class="card__stack">
+                HTML, CSS, JavaScript, prefers-color-scheme, адаптивная вёрстка
+              </p>
+              <a
+                href="https://sobolev-dmitry.github.io/slozhno-sosredotochitsya-fd/"
+                class="button button__card"
+                target="_blank"
+                >Смотреть</a
+              >
+            </article>
+            <article class="card">
+              <img
+                class="card__cover"
+                src="./images/z-tag.jpg"
+                alt="Закрывающий тег — проект-рефлексия"
+              />
+              <h4 class="card__title">«Закрывающий тег» — интерактивный проект с анимациями SVG</h4>
+              <p class="card__stack">HTML, CSS, JavaScript, адаптивная вёрстка</p>
+              <a
+                href="https://sobolev-dmitry.github.io/zakrivayuschiy-teg-f/"
                 class="button button__card"
                 target="_blank"
                 >Смотреть</a
