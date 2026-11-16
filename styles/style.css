@@ -390,6 +390,15 @@
   border-radius: 16px;
   padding: 25px;
   background-color: var(--bg-cart);
+
+  transition:
+    transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--accent-bg);
+  transform: translateY(-6px);
 }
 
 .card__cover {
@@ -409,9 +418,9 @@
 }
 
 .card__stack {
+  margin-bottom: 20px;
   color: var(--text-secondary);
   font-size: var(--fs-text-body);
-  margin-bottom: 20px;
   text-align: center;
 }
 
