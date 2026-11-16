@@ -46,16 +46,11 @@
 .button__card {
   background-color: transparent;
   color: var(--accent);
-  transition: text-decoration 0.3s ease;
 }
 
 .button__card:hover {
   background-color: inherit;
-  color: var(--accent-hover);
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--accent-hover);
+  color: var(--acent-bright);
 }
 
 .button__card:active {
